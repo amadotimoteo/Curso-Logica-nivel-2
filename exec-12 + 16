@@ -1,0 +1,20 @@
+# Entrada das notas
+n1 = float(input("Digite a nota 1: "))
+n2 = float(input("Digite a nota 2: "))
+n3 = float(input("Digite a nota 3: "))
+
+# Cálculo da média ponderada (pesos: 2, 3 e 5)
+media_final = (n1 * 2 + n2 * 3 + n3 * 5) / 10
+
+# Cálculo da média aritmética das duas primeiras avaliações
+media_aritmetica = (n1 + n2) / 2
+
+# Exibição das médias calculadas
+print(f"Média Ponderada Final: {media_final:.2f}")
+print(f"Média Aritmética das Avaliações: {media_aritmetica:.2f}")
+
+# Verificação da aprovação com base na média aritmética
+if media_aritmetica >= 6:
+    print("Aluno APROVADO com base na média aritmética!")
+else:
+    print("Aluno REPROVADO com base na média aritmética!")
